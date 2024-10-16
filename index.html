@@ -1,243 +1,357 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Экскурсия по Санкт-Петербргу</title>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Главная</a></li>
-        <li><a href="#program">Программа</a></li>
-        <li><a href="#audience">Для кого</a></li>
-        <li><a href="#prices">Цены</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="home">
-    <h1>Авторская экскурсия по Санкт-Петербургу</h1>
-    <img src="img/intro.png" alt="Виды Санкт-Петербурга" width="895" height="502">
-
-    <p>Откройте для себя великолепие Санкт-Петербурга с нашими увлекательными экскурсиями. Погрузитесь в богатую
-      культуру
-      и архитектуру, посетите известные достопримечательности. Наши экскурсии созданы, чтобы показать вам самое лучшее,
-      что Санкт-Петербург готов предложить.</p>
-  </section>
-
-  <main>
-    <section id="program">
-      <h2>Что мы предлагаем?</h2>
-      <img src="img/program.jpg" alt="Группа людей на фоне Эрмитажа" width="440" height="321">
-      <p>Приглашаем погрузиться в историю, культуру и великолепие Санкт-Петербурга.</p>
-      <p><b>На наших экскурсиях вас ждут:</b></p>
-      <ol>
-        <li>Профессиональный гид.</li>
-        <li>Уникальные маршруты.</li>
-        <li>Комфортный трансфер.</li>
-        <li>Прогулка по каналам.</li>
-        <li>Лучшие фотолокации.</li>
-        <li>Прогулки по крышам.</li>
-      </ol>
-    </section>
-
-    <section id="audience">
-      <h2>Кому подойдет экскурсия?</h2>
-      <img src="img/auditory-1.jpg" alt="Улыбающаяся девушка" width="246" height="160">
-      <ul>
-        <li>Организованным группам от 15 человек.</li>
-        <li>Индивидуальным путешественникам.</li>
-        <li>Компаниям друзей.</li>
-        <li>Семьям с детьми старше 12 лет.</li>
-      </ul>
-    </section>
-
-    <section id="price">
-      <h2>Какие есть тарифы?</h2>
-      <p>Мы знаем, что каждое путешествие уникально. Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый
-        комфортный для себя. Независимо от выбранного тарифа, вас ждет незабываемое путешествие.</p>
-      <table>
-        <tr>
-          <th>Тариф</th>
-          <th>Группа</th>
-          <th>Стоимость</th>
-          <th>Программа</th>
-        </tr>
-        <tr>
-          <td>Эконом</td>
-          <td>От 15 человек</td>
-          <td>1500 руб.</td>
-          <td>Пешая прогулка, <br>Погрулка по крышам</td>
-        </tr>
-        <tr>
-          <td>Комфорт</td>
-          <td>От 7 человек</td>
-          <td>2500 руб.</td>
-          <td>Пешая прогулка, <br>Экскурсия по рекам и каналам, <br>Погрулка по крышам</td>
-        </tr>
-        <tr>
-          <td>Премиум</td>
-          <td>от 4 до 6 человек</td>
-          <td>4200 руб.</td>
-          <td>Пешая прогулка,<br> Экскурсия по рекам и каналам, <br>Погрулка по крышам, <br>Экскурсия в Петергоф</td>
-        </tr>
-        <tr>
-          <td>Люкс</td>
-          <td>1-2 человека</td>
-          <td>6000 руб.</td>
-          <td>Эксклюзивные маршруты под ключ,<br> Пешая прогулка, <br>Экскурсия по рекам и каналам, <br>Погрулка по
-            крышам,
-            <br>Экскурсия в Петергоф
-          </td>
-        </tr>
-      </table>
-      <p>Мы предлагаем различные варианты оплаты. Менеджер поможет подобрать оптимальный вариант.</p>
-    </section>
-
-    <section>
-      <h2>Дополнительные услуги</h2>
-      <form class="dop-form">
-        <ul>
-          <li>
-            <input type="checkbox" name="services" value="transfer" data-price="100">
-            <label>Трансфер до места начала экскурсии</label>
+<body class="page-body">
+  <header class="page-header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#intro">Главная</a>
           </li>
-          <li>
-            <input type="checkbox" name="services" value="disabled_transfer" data-price="100">
-            <label>Трансфер для людей из маломобильных групп населения</label>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#program">Программа</a>
           </li>
-          <li>
-            <input type="checkbox" name="services" value="breakfast" data-price="100">
-            <label>Завтрак</label>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#auditory">Для кого</a>
           </li>
-          <li>
-            <input type="checkbox" name="services" value="lunch" data-price="100">
-            <label>Обед</label>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#prices">Цены</a>
           </li>
-          <li>
-            <input type="checkbox" name="services" value="dinner" data-price="100">
-            <label>Ужин</label>
-          </li>
-          <li>
-            <input type="checkbox" name="services" value="translator" data-price="100">
-            <label>Переводчик с русского на английский язык</label>
-          </li>
-          <li>
-            <input type="checkbox" name="services" value="children_guide" data-price="100">
-            <label>Экскурсовод для детей</label>
-          </li>
-          <li>
-            <input type="checkbox" name="services" value="sign_language_interpreter" data-price="100">
-            <label>Сурдопереводчик</label>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#contacts">Контакты</a>
           </li>
         </ul>
-      </form>
-      <p id="total-price">Сумма: 0 рублей</p>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="container">
+        <div class="inner-conteiner">
+          <h1 class="intro-title">Авторская экскурсия по Санкт-Петербургу</h1>
+          <img src="img/intro.png" alt="Виды Санкт-Петербурга" width="895" height="502">
+        </div>
+        <div class="intro-text-wrapper">
+          <p>Откройте для себя великолепие Санкт-Петербурга с нашими увлекательными экскурсиями. Погрузитесь в богатую
+            культуру и архитектуру, посетите известные достопримечательности. Наши экскурсии созданы, чтобы показать вам
+            самое лучшее, что Санкт-Петербург готов предложить.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h3>Отзывы клиентов</h3>
-      <figure>
-        <img src="img/reviews-1.jpg" alt="Счастливая пара, посетившая Санкт-Петербург" width="150" height="150">
-        <figcaption>Аня и Сережа, Пермь</figcaption>
-        <p>Спасибо за незабываемую экскурсию!
-          Увозим с собой нереальные фотографии! Организаторам огромное спасибо, что даже в дождь путешествие было
-          комфортным.
-        </p>
-      </figure>
+    <div class="page-content">
+      <div class="container">
+        <div class="page-main-column">
+          <section class="page-section program" id="program">
+            <h2 class="program-title">Что мы предлагаем?</h2>
+            <div class="program-text-wrapper">
+              <p>Приглашаем погрузиться в историю, культуру и великолепие Санкт-Петербурга.</p>
+            </div>
+            <div class="program-row">
+              <div class="program-left">
+                <div class="program-image-wrapper">
+                  <img src="img/program.jpg" width="630" height="531" alt="Группа людей на фоне Эрмитажа">
+                </div>
+              </div>
+              <div class="program-right">
+                <h3 class="program-subtitle">На наших экскурсиях <br> вас ждут:</h3>
+                <ol class="program-list">
+                  <li>Профессиональный гид.</li>
+                  <li>Уникальные маршруты.</li>
+                  <li>Комфортный трансфер.</li>
+                  <li>Прогулка по каналам.</li>
+                  <li>Лучшие фотолокации.</li>
+                  <li>Прогулки по крышам.</li>
+                </ol>
+              </div>
+            </div>
+          </section>
 
-      <figure>
-        <img src="img/reviews-2.jpg" alt="Четверо друзей фотографируются на мосту" width="150" height="150">
-        <figcaption>Света, Алена, Саша и Ваня, Краснодар</figcaption>
-        <p>Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! Это было настоящее
-          приключение. Рекомендуем!
-        </p>
-      </figure>
+          <section class="page-section page-section-with-bg auditory" id="auditory">
+            <div class="auditory-content">
+              <h2 class="auditory-title">Кому подойдет экскурсия?</h2>
+              <div class="auditory-top">
+                <div class="auditory-image-wrapper">
+                  <img class="auditory-image" src="img/auditory-1.jpg" alt="Девушка в Санкт-Петербурге" width="325"
+                    height="182">
+                </div>
+                <div class="auditory-image-wrapper">
+                  <img class="auditory-image" src="img/auditory-2.jpg" alt="Друзья в Санкт-Петербурге" width="325"
+                    height="182">
+                </div>
+                <div class="auditory-image-wrapper">
+                  <img class="auditory-image" src="img/auditory-3.jpg" alt="Семья в Санкт-Петербурге" width="325"
+                    height="182">
+                </div>
+              </div>
+              <div class="auditory-bottom">
+                <ul class="auditory-list">
+                  <li>Организованным группам от 15 человек.</li>
+                  <li>Индивидуальным путешественникам.</li>
+                  <li>Компаниям друзей.</li>
+                  <li>Семьям с детьми старше 12 лет.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-      <figure>
-        <img src="img/reviews-3.jpg" alt="Рыжая девушка в Санкт-Петербурге" width="150" height="150">
-        <figcaption>Кристина, Архангельск</figcaption>
-        <p>Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! Суперский гид рассказал удивительные
-          истории о городе и его жителях. Отдельно отмечу маршрут.
-          Не первый раз в Питере, но эти локации увидела впервые. Класс!
-        </p>
-      </figure>
-    </section>
+          <section class="page-section prices" id="price">
+            <h2 class="prices-title">Какие есть тарифы?</h2>
+            <div class="prices-text-wrapper">
+              <p>Мы знаем, что каждое путешествие уникально. Поэтому разработали несколько тарифов, чтобы вы могли
+                выбрать
+                самый
+                комфортный для себя. Независимо от выбранного тарифа, вас ждет незабываемое путешествие.</p>
+            </div>
+            <table class="prices-table">
+              <tr>
+                <th>Тариф</th>
+                <th>Группа</th>
+                <th>Стоимость</th>
+                <th>Программа</th>
+              </tr>
+              <tr>
+                <td>Эконом</td>
+                <td>От 15 человек</td>
+                <td>1500 руб.</td>
+                <td>Пешая прогулка, <br>Погрулка по крышам</td>
+              </tr>
+              <tr>
+                <td>Комфорт</td>
+                <td>От 7 человек</td>
+                <td>2500 руб.</td>
+                <td>Пешая прогулка, <br>Экскурсия по рекам и каналам, <br>Погрулка по крышам</td>
+              </tr>
+              <tr>
+                <td>Премиум</td>
+                <td>от 4 до 6 человек</td>
+                <td>4200 руб.</td>
+                <td>Пешая прогулка,<br> Экскурсия по рекам и каналам, <br>Погрулка по крышам, <br>Экскурсия в Петергоф
+                </td>
+              </tr>
+              <tr>
+                <td>Люкс</td>
+                <td>1-2 человека</td>
+                <td>6000 руб.</td>
+                <td>Эксклюзивные маршруты под ключ,<br> Пешая прогулка, <br>Экскурсия по рекам и каналам, <br>Погрулка
+                  по
+                  крышам,
+                  <br>Экскурсия в Петергоф
+                </td>
+              </tr>
+            </table>
+            <div class="prices-caption">Мы предлагаем различные варианты оплаты. Менеджер поможет подобрать оптимальный
+              вариант.</div>
+          </section>
 
-    <section>
-      <h5>Как записаться на экскурсию</h5>
-      <p>Для подробной информации заполните форму.
-        <br>Наши менеджеры с вами свяжутся.
-      </p>
+          <section class="page-section page-section-with-bg services">
+            <div class="services-content">
+              <h2 class="services-title">Дополнительные услуги</h2>
+              <div class="services-text">
+                <p>
+                  При выборе дополнительных опций к экскурсиям вы получаете возможность настроить свой опыт путешествия
+                  по
+                  своему вкусу.
+                  В зависимости от ваших предпочтений и потребностей, вы можете выбрать опцию трансфера, питания или
+                  сопровождения.
+                </p>
+              </div>
+              <div class="services-row">
+                <div class="services-left">
+                  <form class="services-form" method="post" action="/">
+                    <ul class="services-list">
+                      <li>
+                        <input type="checkbox" name="services" value="transfer" data-price="100">
+                        <label>Трансфер до места начала экскурсии</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="disabled_transfer" data-price="100">
+                        <label>Трансфер для людей из маломобильных групп населения</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="breakfast" data-price="100">
+                        <label>Завтрак</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="lunch" data-price="100">
+                        <label>Обед</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="dinner" data-price="100">
+                        <label>Ужин</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="translator" data-price="100">
+                        <label>Переводчик с русского на английский язык</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="children_guide" data-price="100">
+                        <label>Экскурсовод для детей</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="services" value="sign_language_interpreter" data-price="100">
+                        <label>Сурдопереводчик</label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+                <div class="services-right">
+                  <div class="services-price" id="total-price">Сумма: 0 рублей</div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <form>
-        <input type="text" name="name" id="name" placeholder="Ваше имя"><br>
-        <input type="text" name="surname" id="surname" placeholder="Фамилия"><br>
-        <input type="email" placeholder="E-mail"><br>
-        <input type="tel" placeholder="Номер телефона"><br>
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
-    <section>
-      <form>
-        <select name="tariff" id="tariff">
-          <label for="tariff">Выберите тариф:</label>
-          <option value="econom">Эконом</option>
-          <option value="comfort">Комфорт</option>
-          <option value="premium">Премиум</option>
-          <option value="lux">Люкс</option>
-        </select>
-      </form>
-    </section>
+          <section class="page-section reviews">
+            <h2 class="reviews-title">Отзывы клиентов</h2>
 
-    <aside>
-      <h2>Другие экскурсии</h2>
-      <ul>
-        <li>
-          <img src="img/card-1.jpg" alt="Реки и каналы" width="240" height="160">
-          <p>Экскурсия по рекам и каналам</p>
-        </li>
-        <li>
-          <img src="img/card_2.png" alt="Девушки сидят за столиком кафе на набережной Петербурга" width="240" height="160">
-          <p>Мистический Петербург</p>
-        </li>
-        <li>
-          <img src="img/card_3.png" alt="Вид на Неву и собор Санкт-Петербурга" width="240" height="160">
-          <p>Пешая прогулка по городу</p>
-        </li>
-        <li>
-          <img src="img/card_4.png" alt="юди гуляют рядом с достопримечательностями Санкт-Петербурга" width="240" height="160">
-          <p>Семь мостов</p>
-        </li>
-        <li>
-          <img src="img/card_5.png" alt="Осенний вид Санкт-Петербурга" width="240" height="160">
-          <p>Литературный Петербург</p>
-        </li>
-        <li>
-          <img src="img/card_6.png" alt="Вид на достопримечательности Санкт-Петербурга" width="240" height="160">
-          <p>Акватория Невы</p>
-        </li>
-        <li>
-          <img src="img/card_7.png" alt="Вид на Неву и туристический кораблик" width="240" height="160">
-          <p>Прогулка под разводными мостами</p>
-        </li>
-      </ul>
-    </aside>
+            <div class="reviews-item">
+              <div class="reviews-item-image-wrapper">
+                <img src="img/reviews-1.jpg" alt="Счастливая пара, посетившая Санкт-Петербург" width="150" height="150">
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-text-wrapper">
+                  <p>Спасибо за незабываемую экскурсию! Увозим с собой нереальные фотографии! Организаторам огромное
+                    спасибо, что даже в дождь путешествие было комфортным.</p>
+                </div>
+                <div class="reviews-item-author">Аня и Сережа, Пермь</div>
+              </div>
+            </div>
 
-    <address id="contacts">
-      <a href="https://t.me/Lana_banana_S">Свяжитесь с автором экскурсии</a>
-    </address>
+            <div class="reviews-item">
+              <div class="reviews-item-image-wrapper">
+                <img src="img/reviews-2.jpg" alt="Четверо друзей фотографируются на мосту" width="150" height="150">
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-text-wrapper">
+                  <p>Мы провели замечательный день с вашей экскурсией по крышам Санкт-Петербурга! Это было настоящее
+                    приключение. Рекомендуем!
+                  </p>
+                </div>
+                <div class="reviews-item-author">Света, Алена, Саша и Ваня, Краснодар</div>
+              </div>
+            </div>
+
+            <div class="reviews-item">
+              <div class="reviews-item-image-wrapper">
+                <img src="img/reviews-3.jpg" alt="Рыжая девушка в Санкт-Петербурге" width="150" height="150">
+              </div>
+              <div class="reviews-item-content">
+                <div class="reviews-item-text-wrapper">
+                  <p>Я просто влюбилась в Санкт-Петербург благодаря этой экскурсии! Суперский гид рассказал удивительные
+                    истории о городе и его жителях. Отдельно отмечу маршрут. Не первый раз в Питере, но эти локации
+                    увидела впервые. Класс!
+                  </p>
+                </div>
+                <div class="reviews-item-author">Кристина, Архангельск</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="page-section contacts" id="contacts">
+            <h5 class="contacts title">Как записаться на экскурсию</h5>
+            <div class="contacts-content">
+              <div class="contacts-text-wrapper">
+                <p>Для подробной информации заполните форму.
+                  <br>Наши менеджеры с вами свяжутся.
+                </p>
+              </div>
+              <form class="contacts-form" method="post" action="/">
+                <input type="text" name="name" id="name" placeholder="Ваше имя"><br>
+                <input type="text" name="surname" id="surname" placeholder="Фамилия"><br>
+                <input type="email" placeholder="E-mail"><br>
+                <input type="tel" placeholder="Номер телефона"><br>
+                <button type="submit">Отправить</button>
+
+                <div class="contacts-form-bottom">
+                  <label class="contacts-tariff-label" for="tariff">Выберите тариф:</label>
+                  <select class="contacts-select" name="tariff" id="tariff">
+                    <option value="econom">Эконом</option>
+                    <option value="comfort">Комфорт</option>
+                    <option value="premium">Премиум</option>
+                    <option value="lux">Люкс</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <address class="contacts-address">
+              <a class="contacts-btn" href="https://t.me/Lana_banana_S" target="_blank">Свяжитесь с автором
+                экскурсии</a>
+            </address>
+
+          </section>
+
+        </div>
+
+        <aside class="page-aside sidebar">
+          <h2 class="sidebar-title">Другие экскурсии</h2>
+          <ul class="sidebar-list">
+            <li>
+              <article class="card">
+                <img src="img/card-1.jpg" alt="Реки и каналы" width="240" height="160">
+                <h3 class="card-image-title">Экскурсия по рекам и каналам</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_2.png" alt="Девушки сидят за столиком кафе на набережной Петербурга" width="240"
+                  height="160">
+                <h3 class="card-image-title">Мистический Петербург</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_3.png" alt="Вид на Неву и собор Санкт-Петербурга" width="240" height="160">
+                <h3 class="card-image-title">Пешая прогулка по городу</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_4.png" alt="юди гуляют рядом с достопримечательностями Санкт-Петербурга" width="240"
+                  height="160">
+                <h3 class="card-image-title">Семь мостов</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_5.png" alt="Осенний вид Санкт-Петербурга" width="240" height="160">
+                <h3 class="card-image-title">Литературный Петербург</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_6.png" alt="Вид на достопримечательности Санкт-Петербурга" width="240" height="160">
+                <h3 class="card-image-title">Акватория Невы</h3>
+              </article>
+            </li>
+            <li>
+              <article class="card">
+                <img src="img/card_7.png" alt="Вид на Неву и туристический кораблик" width="240" height="160">
+                <h3 class="card-image-title">Прогулка под разводными мостами</h3>
+              </article>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </div>
+
   </main>
 
-  
-
-  <footer>
-    <p>2023 год, Авторская экскурсия по Санкт-Петербургу</p>
+  <footer class="page-footer">
+    <div class="container">
+      <p class="copyright">2023 год, Авторская экскурсия по Санкт-Петербургу</p>
+    </div>
   </footer>
 
   <script>
