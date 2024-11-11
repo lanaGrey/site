@@ -26,6 +26,7 @@ a {
   font-family: "Open Sans" sans-serif;
   font-size: 20px;
   color: #000;
+  background-color: #fff;
 }
 
 .intro {
@@ -48,6 +49,10 @@ a {
 
 .page-section {
   position: relative;
+}
+
+page-section-with-bg{
+  background-color: #9D9D9D;
 }
 
 .page-section-with-bg::before {
@@ -89,13 +94,13 @@ a {
   position: relative;
 }
 
-.price-table th {
+.prices-table th {
   font-weight: 700;
   color: #fff;
   text-align: left;
 }
 
-.price-table td,
+.prices-table,
 .service-list label {
   font-size: 16px;
 }
@@ -105,6 +110,9 @@ a {
   color: #9D9D9D;
 }
 
+.services-content{
+  font-size: 14px;
+}
 .service-price {
   color: #fff;
   font-size: 20px;
@@ -183,7 +191,7 @@ a {
   list-style-type: none;
 }
 
-.card-image-link {
+/* .card-image-link {
   overflow: hidden;
 }
 
@@ -194,7 +202,7 @@ a {
 .card-image {
   object-fit: cover;
 }
-
+ */
 .card-image-title {
   font-size: 16px;
   font-weight: 400;
@@ -216,3 +224,4 @@ a {
 .copyright {
   text-align: center;
 }
+
